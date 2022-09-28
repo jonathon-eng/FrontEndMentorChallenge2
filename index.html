@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  
+
+  <!-- Rating state start -->
+
+<main class="Cards">
+  <div class="Rating-state-card">
+      <img id="favorite" class="favorite" src="./images/icon-star.svg" alt="star shape favorite icon">
+      <h1>How did we do?</h1>
+    
+      <h2>Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!</h2>
+    
+      <ol >
+        <li id="button-1" class="rating" onclick="getRating()">1</li>
+        <li id="button-2" class="rating" onclick="getRating()">2</li>
+        <li id="button-3" class="rating">3</li>
+        <li id="button-4" class="rating">4</li>
+        <li id="button-5" class="rating">5</li>
+      </ol>
+    
+      <button>SUBMIT</button>
+  </div>
+</main>
+
+  <!-- Rating state end -->
+
+
+
+
+  <!-- Thank you state start -->
+
+
+  <div class="Thank-you-card">
+    <img src="./images/illustration-thank-you.svg" alt="Thank you for rating" class="thanksIMG">
+    
+    <p class="selection"> You selected <span class="selection1"> PLACEHOLDER </span>out of 5</p>
+    
+    <h1 class="thanks">Thank you!</h1>
+    
+    <h2 class="text">We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!</h2>
+  
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="script.js" async defer></script>
+  
+</body>
+</html>
