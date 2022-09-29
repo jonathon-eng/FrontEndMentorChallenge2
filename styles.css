@@ -16,11 +16,12 @@ body {
     background-color: hsl(216, 12%, 8%);
 }
 
-@media only screen and (max-width: 380px) {
+@media (min-width: 380px) {
    
-    .Rating-state-card .Thank-you-card {
+    .Cards{
    
-        margin-top: 500px;
+        margin-top: 10rem;
+
     }
 }
 
