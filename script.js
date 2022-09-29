@@ -1,6 +1,4 @@
-const firstCard = document.getElementsByClassName("Rating-state-card");
 
-const secondCard = document.getElementsByClassName("Thank-you-card");
 let data = document.querySelector('input[name="select"]:checked');
 
 
