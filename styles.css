@@ -13,7 +13,7 @@
 
 body {
     
-    background-color: black;
+    background-color: hsl(214, 100%, 5%);
 }
 
 /* Rating State*/
@@ -21,12 +21,12 @@ body {
 .Rating-state-card {
     max-width: 20rem;
     padding: 2rem;
-
-    background-color: hsl(216, 12%, 8%);
+    background-image: linear-gradient(to top, hsl(0, 0%, 3%),hsl(216, 12%, 8%));
     border-radius: 1rem;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 2rem;
+    box-shadow: 15px 20px 35px 7px rgba(0,0,0,0.6);
 }
 
 .Rating-state-card > img {
@@ -40,7 +40,7 @@ h1 {
     padding: 2rem 0;
 }
 
-h2 {
+.text {
     font-size: 1rem;
     color: hsl(217, 12%, 63%);
     font-weight: 400;
@@ -73,7 +73,58 @@ ol > li:hover {
 }
 
 
-button {
+.radios {
+    display: flex;
+  width: auto;
+
+}
+
+label {
+    display: flex; 
+    margin: 1.5rem 0;
+    gap:1.5rem;
+
+    flex-grow: 1;
+
+}
+label input {
+    display: none;
+    width: 100%;
+    margin: 1.5rem 0;
+    justify-content: center;
+
+
+}
+label span {
+  
+    width: 3rem; 
+    height: 3rem; 
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(217, 12%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+input:checked + span {
+    background: hsl(217, 12%, 63%);
+    color: white;
+    border-color: #ccf;
+}
+input:hover + span {
+    background: hsl(25, 97%, 53%);
+    border-color: #ccf;
+}
+
+
+
+
+
+
+
+input[type=submit] {
     background-color: hsl(25, 97%, 53%) ;
     border: none;
     display: block;
@@ -86,7 +137,7 @@ button {
     border-radius: 40px;
 }
 
-button:hover {
+input[type=submit]:hover {
     background-color: white;
     color: hsl(25, 97%, 53%)
 }
@@ -97,16 +148,17 @@ button:hover {
 .Thank-you-card {
     max-width: 20rem;
     padding: 2rem;
-    background-color: hsl(216, 12%, 8%);
+    background-image: linear-gradient(to top, hsl(0, 0%, 3%),hsl(216, 12%, 8%));
     border-radius: 1rem;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 2rem;
-    display: block;
+    display: none;
     align-items: center;
     justify-content: center;
     position: relative;
     height: 22rem;
+    box-shadow: 15px 20px 35px 7px rgba(0,0,0,0.6);
 
 }
 
@@ -135,6 +187,10 @@ align-content: center;
 
 }
 
-.Thank-you-card > h2 {
+.Thank-you-card > .text {
 text-align: center;
+}
+
+.spanColor {
+    color: hsl(25, 97%, 53%);
 }
