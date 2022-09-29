@@ -1,3 +1,6 @@
+const firstCard = document.getElementsByClassName("Rating-state-card");
+
+const secondCard = document.getElementsByClassName("Thank-you-card");
 let data = document.querySelector('input[name="select"]:checked');
 
 
@@ -10,3 +13,7 @@ function displayData() {
     document.getElementById("card2").style.display="block";
 }
 
+function goBack() {
+    document.getElementById("card1").style.display="block";
+    document.getElementById("card2").style.display="none";
+}
